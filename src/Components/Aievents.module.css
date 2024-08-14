@@ -1,0 +1,162 @@
+/* General styling for the AI Events container */
+.eventsDesktop {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  align-items: start;
+  width: 80%;
+  margin: 0 auto;
+  padding: 31px 73px 235px 0;
+}
+
+@media (max-width: 991px) {
+  .eventsDesktop {
+    padding: 0 20px 100px 0;
+  }
+}
+
+/* AI Events header styling */
+.div15 {
+  margin-top: 20px;
+  /* width: 80%; */
+  padding-left: 5px;
+  /* flex-direction: column; */
+  font-weight: 400;
+  align-self: end;
+}
+
+.aiEvents {
+  color: rgba(0, 0, 0, 1);
+  font-size: 36px;
+  font-weight: 600;
+  /* line-height: 1; */
+  align-self: start;
+  margin: 0;
+}
+
+.div151 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Align items in the center vertically */
+  width: 100%;
+  position: relative; /* Make this the reference for absolute positioning */
+  padding: 0 0px; /* Optional: add padding to give some space inside the container */
+}
+
+/* Container for date navigation buttons and device dropdown */
+.div2 {
+  display: flex;
+  align-items: flex-end;
+    align-items: center; 
+  gap: 29px;
+  margin-top: 20px;
+  
+  /* Added property */
+  margin-left: auto; /* Pushes the .div2 to the right side */
+}
+
+
+.deviceDropdown {
+  border-radius: 8px;
+  border: 1px solid #dfdbdb;
+  ;
+  padding: 6px 12px;
+  font-size: 16px;
+  background-color: #fff;
+}
+
+/* Previous/Next week buttons */
+.previousWeek, .nextWeek {
+  cursor: pointer;
+  /* color: #007bff; */
+  font-size: 16px;
+  /* text-decoration: none; */
+}
+
+.previousWeek:hover, .nextWeek:hover {
+  text-decoration: none;
+}
+
+/* Dates container and individual date boxes */
+.datesContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+
+.dateBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px 26px 22px 26px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dateBox:hover {
+  background-color: #e0e0e0;
+}
+
+.dateBox.selected {
+  background-color: #eef2ff;
+  border: 1px solid #7f56d9;
+  color: black;
+}
+
+.date {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.day {
+  font-size: 14px;
+  color: #888;
+}
+
+/* Tabs container and styling */
+/* Tabs container and styling */
+.buttonGroup {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+  gap: 0px; /* Remove gap to ensure border touches */
+  width: 284px;
+  height: 40px;
+  border: 1px solid #dfdbdb;
+  margin-left: auto;
+}
+
+.buttonGroup button {
+  border: none;
+  background: transparent;
+  color: #333;
+  border-right: 1px solid var(--Gray-300, #d0d5dd);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+  flex: 1; /* Make each button take up equal space */
+}
+
+.buttonGroup button:last-child {
+  border-right: none; /* Remove the right border for the last button */
+}
+
+
+
+.buttonGroup button:hover {
+  background-color: rgba(127, 86, 217, 0.2);
+}
+
+.buttonGroup button:focus {
+  outline: 2px solid #7f56d9;
+  outline-offset: 2px;
+}
+
+
